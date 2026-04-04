@@ -9,4 +9,4 @@
   With our graphs, we wanted to make two graphs that displayed the rating vs TV show, and rating vs Movie. These are the main data columns we want to focus on, and viewing them in graph form will help us understand the data. 
 
 ##### \- What is next?
-Next we want to look over what the graphs displayed and figure out what specifically we want to analyze. 
+Next we want to look over what the graphs displayed and figure out what specifically we want to analyze. We also are also going to start figuring out exectly how we will be using the data later on when making the various ML tests.
