@@ -14,12 +14,18 @@ Next we want to look over what the graphs displayed and figure out what specific
 
 ### Check in 2:
 #### \- What has been done?
-Here are the graphs that we created. One is for rating over time for TV shows, and one is for rating over time with movies. Each graph displays a higher frequency of ratings when the time gets closer to the year 2020, and each graph shows more rated R movies and shows. There is also a noticible dip right when COVID started, which makes sense. We will now use these graphs to cultivate our first machine learning model: linear regression.
+Here are the graphs that we created. One is for rating over time for TV shows, and one is for rating over time with movies. Each graph displays a higher frequency of ratings when the time gets closer to the year 2020, and each graph shows more rated R movies and shows. There is also a noticible dip right when COVID started, which makes sense. 
 
 <img width="850" height="507" alt="image" src="https://github.com/user-attachments/assets/4d390910-3ede-493d-9743-166a043f8160" />
 <img width="850" height="507" alt="image" src="https://github.com/user-attachments/assets/d1834997-371e-42f1-a0c5-81a002229f22" />
 
-We want to try and predict the ratings of TV shows and movies. The question we want to answer is, "Is there a correlation between the rating of a movie and both it's title and genre?". We want to use the "listed in" and the "title" columns to try and predict the "ratings" column. 
 
-We started off with getting a count of how many different themes there were. If there were too many, then the model might not do as well because there wouldn't be enough correlation to base it's prediction off of. If there were too little, then there would not be a correlation to keep track of, but for the opposite reason. We took a count and there was about 20-25 genres for movies and same for TV shows. This is enough for a correlation. 
+#### Logistic Regression
 
+After a bit of thought we decided to change our idea of using linear regression to using logistic regression to fit the question "Does the duration or number of seasons a piece of media have an influence from what its rating is?". Logistic allows us to look at a random duration and shows us what the probability is of finding a movie/show with each rating. There are a few things that might need to be tuned up with the code for this, but as of right now the graphs of the ratings crossed with the duration look pretty good, showing the trends of the ratings from a shorter duration to longer duration. By the looks of it, it is much better at doing this with movies because the duration is in minutes and varies a lot. Meanwhile, shows is by season, so the more seasons there are, the less shows you will find, along with the range only being around 1 to 18 seasons in the data.
+
+<img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/00118978-f78d-4a8e-8e3b-005a3d5b6681" />
+<img width="855" height="545" alt="image" src="https://github.com/user-attachments/assets/26d008d1-8061-49fa-99f2-8f7f2695a849" />
+
+
+#### Random Forest
