@@ -29,3 +29,8 @@ After a bit of thought we decided to change our idea of using linear regression 
 
 
 #### Random Forest
+
+Here we are starting our random forest method. This is answering the question about if there is a correlation between the rating of the movie and both it's genre and title. To start, we had to deal with the fact that one of our columns was a list of different genres the show or movie was. To make the table into something the model could read, I performed multi-hot encoding. This will be different when I perform it for shows, because there are different genres. For now, we just did it for movies.
+
+<img width="1245" height="438" alt="image" src="https://github.com/user-attachments/assets/56ebc300-6124-4b92-b1ca-69784d19346d" />
+
